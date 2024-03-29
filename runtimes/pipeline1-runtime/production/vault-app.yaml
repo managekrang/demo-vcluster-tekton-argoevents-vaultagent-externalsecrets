@@ -9,7 +9,8 @@ spec:
   project: demo-pipeline
   source:
     chart: vault
-    repoURL: https://helm.releases.hashicorp.com/
+    #repoURL: https://helm.releases.hashicorp.com/
+    repoURL: https://myharbor.xyz/charts
     targetRevision: 0.20.1
     helm:
       values: |-

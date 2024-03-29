@@ -9,7 +9,8 @@ spec:
   project: demo-vcluster
   source:
     chart: vcluster
-    repoURL: https://charts.loft.sh
+    #repoURL: https://charts.loft.sh
+    repoURL: https://myharbor.xyz/charts
     targetRevision: 0.10.1
     helm:
       values: |-
