@@ -9,8 +9,8 @@ spec:
   project: demo-vcluster
   source:
     chart: traefik
-    #repoURL: https://helm.traefik.io/traefik
-    repoURL: https://myharbor.xyz/charts
+    repoURL: https://helm.traefik.io/traefik
+    #repoURL: https://myharbor.xyz/charts
     targetRevision: v10.22.0
     helm:
       values: |-
