@@ -19,9 +19,9 @@ spec:
           - name: default
             protocol: layer2
             addresses:
-            - 192.168.0.184-192.168.0.184
+            #- 192.168.0.184-192.168.0.184
             # change 2024.4.4 change range to vm master ip
-            #- 192.168.3.128-192.168.3.128
+            - 192.168.3.128-192.168.3.128
   destination:
     server: https://kubernetes.default.svc
     namespace: metallb
