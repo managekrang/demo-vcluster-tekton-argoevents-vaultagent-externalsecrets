@@ -19,7 +19,8 @@ spec:
         injector:
           enabled: true
           authPath: auth/pipeline1
-          externalVaultAddr: http://119.8.58.20:31820
+          #externalVaultAddr: http://119.8.58.20:31820
+          externalVaultAddr: http://192.168.3.128:31820
   destination:
     server: https://kubernetes.default.svc
     namespace: vault
