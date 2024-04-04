@@ -18,7 +18,8 @@ spec:
           image: rancher/k3s:v1.21.13-k3s1
         syncer:
           extraArgs:
-          - --tls-san=192.168.0.184
+          - --tls-san=192.168.3.128
+          #- --tls-san=192.168.0.184
   destination:
     server: https://kubernetes.default.svc
     namespace: vcluster1
