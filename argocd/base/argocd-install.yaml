@@ -9696,7 +9696,7 @@ spec:
             fieldRef:
               fieldPath: metadata.namespace
         image: quay.io/argoproj/argocd:v2.4.0
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: argocd-applicationset-controller
         ports:
         - containerPort: 7000
@@ -9768,7 +9768,7 @@ spec:
         - /shared/argocd-dex
         - rundex
         image: ghcr.io/dexidp/dex:v2.30.2
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: dex
         ports:
         - containerPort: 5556
@@ -9793,7 +9793,7 @@ spec:
         - /usr/local/bin/argocd
         - /shared/argocd-dex
         image: quay.io/argoproj/argocd:v2.4.0
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: copyutil
         securityContext:
           allowPrivilegeEscalation: false
@@ -9833,7 +9833,7 @@ spec:
       - command:
         - argocd-notifications
         image: quay.io/argoproj/argocd:v2.4.0
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         livenessProbe:
           tcpSocket:
             port: 9001
@@ -9908,7 +9908,7 @@ spec:
         - --appendonly
         - "no"
         image: redis:7.0.0-alpine
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: redis
         ports:
         - containerPort: 6379
@@ -10046,7 +10046,7 @@ spec:
         - name: HELM_DATA_HOME
           value: /helm-working-dir
         image: quay.io/argoproj/argocd:v2.4.0
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
           httpGet:
@@ -10338,7 +10338,7 @@ spec:
               name: argocd-cmd-params-cm
               optional: true
         image: quay.io/argoproj/argocd:v2.4.0
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
             path: /healthz?full=true
@@ -10540,7 +10540,7 @@ spec:
               name: argocd-cmd-params-cm
               optional: true
         image: quay.io/argoproj/argocd:v2.4.0
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
             path: /healthz
